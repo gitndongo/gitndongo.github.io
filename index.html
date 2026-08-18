@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mouhamed Kane Ndongo — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
+<!-- NAV -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <span class="logo">MKN.</span>
+    <div class="nav-links" id="navLinks">
+      <a href="#projets" data-section="projets">PROJETS</a>
+      <a href="#competences" data-section="competences">COMPÉTENCES</a>
+      <a href="#parcours" data-section="parcours">PARCOURS</a>
+      <a href="#contact" data-section="contact">CONTACT</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="eyebrow"><span class="diamond"></span>DÉVELOPPEUR FULL-STACK — DAKAR, SÉNÉGAL</div>
+  <h1 class="hero-title">Mouhamed Kane<br><span class="accent">Ndongo</span></h1>
+  <p class="hero-bio">
+    Étudiant en L2 Génie Logiciel et Systèmes d'Information à l'ESP/UCAD, formé au
+    développement full-stack et à l'intégration de modèles d'IA. Passionné d'informatique
+    depuis l'enfance, motivé avant tout par la créativité qu'offre le développement —
+    transformer une idée en quelque chose de concret, utile, parfois à impact social.
+  </p>
+  <div class="hero-cta">
+    <a href="#projets" class="btn btn-solid">VOIR LES PROJETS</a>
+    <a href="#contact" class="btn btn-outline">ME CONTACTER</a>
+  </div>
+  <div class="hero-stats" id="heroStats">
+    <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Projets</span></div>
+    <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Domaines techniques</span></div>
+    <div class="stat"><span class="stat-num" data-count="2024">0</span><span class="stat-label">Début parcours ESP</span></div>
+  </div>
+</header>
+
+<!-- ROUTE LINE WRAPPER -->
+<div class="route-wrap">
+  <div class="route-line" aria-hidden="true">
+    <div class="route-line-fill" id="routeFill"></div>
+  </div>
+
+  <!-- PROJETS -->
+  <section id="projets" class="route-section">
+    <div class="section-label"><span class="label-num">02</span><h2>Projets</h2></div>
+    <p class="section-hint">survole une compétence plus bas pour voir les projets liés</p>
+
+    <div class="project-grid">
+
+      <article class="project-card" data-tags="python flask fastapi docker ia">
+        <span class="pc-num">01</span>
+        <div class="pc-body">
+          <div class="pc-head">
+            <h3>SénSanté</h3>
+            <span class="pc-tag" style="--tag-color: var(--teal)">IA / Santé</span>
+          </div>
+          <p class="pc-desc">
+            Outil de pré-diagnostic médical assisté par IA. Intégration d'un modèle ML avec
+            l'API Groq (Llama 3.1) pour expliquer les résultats à l'utilisateur. Backend
+            Flask/FastAPI, conteneurisation Docker, déployé sur Hugging Face Spaces.
+          </p>
+          <div class="pc-stack">Python · Flask · FastAPI · Docker · Groq API</div>
+          <a class="pc-link" href="https://huggingface.co/spaces/hfndongo/sensante" target="_blank" rel="noopener">
+            ↗ huggingface.co/spaces/hfndongo/sensante
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="react javascript frontend">
+        <span class="pc-num">02</span>
+        <div class="pc-body">
+          <div class="pc-head">
+            <h3>SénTransport</h3>
+            <span class="pc-tag" style="--tag-color: var(--gold)">Mobilité / Web</span>
+          </div>
+          <p class="pc-desc">
+            Application web de transport public pour Dakar. Architecture orientée composants
+            réutilisables, cartographie interactive et données météo en temps réel.
+          </p>
+          <div class="pc-stack">React.js · Leaflet · OpenWeatherMap · API REST</div>
+          <a class="pc-link" href="https://github.com/gitndongo/sentransport" target="_blank" rel="noopener">
+            ↗ github.com/gitndongo/sentransport
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="laravel uml agile methodologie">
+        <span class="pc-num">03</span>
+        <div class="pc-body">
+          <div class="pc-head">
+            <h3>TerangaMade</h3>
+            <span class="pc-tag" style="--tag-color: var(--muted)">E-commerce / Conception</span>
+          </div>
+          <p class="pc-desc">
+            Concept de marketplace pour produits locaux sénégalais. Architecture MVC,
+            diagrammes UML de cas d'utilisation, maquettes UI, méthodologie Agile/Scrum.
+          </p>
+          <div class="pc-stack">Laravel (MVC) · UML · Agile/Scrum</div>
+          <span class="pc-link pc-link-disabled">— pas de dépôt public —</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="react node express sql bdd">
+        <span class="pc-num">04</span>
+        <div class="pc-body">
+          <div class="pc-head">
+            <h3>Restaurant Management System</h3>
+            <span class="pc-tag" style="--tag-color: var(--teal)">Full-Stack</span>
+          </div>
+          <p class="pc-desc">
+            Application de gestion de restaurant en architecture 3-tiers — projet de cours de
+            bases de données avancées, client + fonctionnalités additionnelles.
+          </p>
+          <div class="pc-stack">React/Vite · Node.js/Express · MySQL</div>
+          <span class="pc-link pc-link-disabled">— projet de cours —</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="route-section">
+    <div class="section-label"><span class="label-num">03</span><h2>Compétences</h2></div>
+    <p class="section-hint">clique une catégorie pour voir les projets où elle est utilisée</p>
+
+    <div class="skills-list" id="skillsList">
+      <button class="skill-row" data-filter="python flask fastapi docker ia">
+        <span class="skill-key">LANGAGES</span>
+        <span class="skill-val">Java (Android), Python, JavaScript, SQL</span>
+      </button>
+      <button class="skill-row" data-filter="react javascript frontend node express">
+        <span class="skill-key">FRAMEWORKS / OUTILS</span>
+        <span class="skill-val">React.js, Vite, Node.js/Express, Flask, FastAPI, Tailwind CSS, Docker, Git/GitHub, Postman</span>
+      </button>
+      <button class="skill-row" data-filter="sql bdd">
+        <span class="skill-key">BASES DE DONNÉES</span>
+        <span class="skill-val">MySQL, PostgreSQL, MariaDB</span>
+      </button>
+      <button class="skill-row" data-filter="node express">
+        <span class="skill-key">SÉCURITÉ / AUTH</span>
+        <span class="skill-val">JWT, bcrypt, gestion de rôles</span>
+      </button>
+      <button class="skill-row" data-filter="ia python">
+        <span class="skill-key">INTÉGRATION IA</span>
+        <span class="skill-val">API Groq (Llama 3.1), explication de résultats ML</span>
+      </button>
+      <button class="skill-row" data-filter="uml agile methodologie">
+        <span class="skill-key">MÉTHODOLOGIE</span>
+        <span class="skill-val">UML, Agile/Scrum, travail en équipe sur Git</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours" class="route-section">
+    <div class="section-label"><span class="label-num">04</span><h2>Parcours</h2></div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-num">01</span>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Baccalauréat Sciences Expérimentales</h3>
+            <span class="tl-period">Avant 2024</span>
+          </div>
+          <p>Lycée Banque Islamique, Dakar</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-num">02</span>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>L2 Génie Logiciel et Systèmes d'Information</h3>
+            <span class="tl-period">2024 — présent</span>
+          </div>
+          <p>École Supérieure Polytechnique (ESP), UCAD, Dakar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="eyebrow"><span class="diamond" style="background:var(--teal)"></span>05 — CONTACT</div>
+    <h2 class="contact-title">Disponible pour un stage.</h2>
+
+    <div class="contact-links">
+      <button class="contact-item" id="copyEmailBtn" data-email="mouhamedkanendongo@esp.sn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span id="emailText">mouhamedkanendongo@esp.sn</span>
+      </button>
+      <a class="contact-item" href="tel:+221770987028">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.5 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .4 2 .6 3 .7a2 2 0 0 1 1.6 2Z"/></svg>
+        <span>+221 77 098 70 28</span>
+      </a>
+      <span class="contact-item contact-item-static">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Dakar, Sénégal</span>
+      </span>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/gitndongo" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/mouhamed-kane-ndongo-9b270b359/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2c.7-1.4 2-2.3 4-2.3 3 0 4.5 1.9 4.5 5.5V21h-4v-6c0-1.5-.5-2.5-2-2.5s-2.3 1-2.3 2.5V21h-4V9Z"/></svg>
+      </a>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/mouhamedkanendongo@esp.sn" method="POST">
+      <input type="hidden" name="_subject" value="Nouveau message — Portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="field">
+        <label for="name">NOM</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field field-full">
+        <label for="message">MESSAGE</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid btn-submit">ENVOYER</button>
+    </form>
+  </div>
+</section>
+
+<footer class="sitefoot">© 2026 Mouhamed Kane Ndongo</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
